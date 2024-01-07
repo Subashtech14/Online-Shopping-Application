@@ -250,6 +250,7 @@ h6 {
   bottom: 20px;
   right: 10px;
 }
+/* Banner Container */
 #banner {
   display: flex;
   flex-direction: column;
@@ -289,4 +290,57 @@ h6 {
   border: none;
   outline: none;
   transition: 0.2s;
+}
+/* Banners */
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/banner/b17.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+#sm-banner .banner-box2 {
+  background-image: url("img/banner/b10.jpg");
+}
+#sm-banner h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+#sm-banner h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+#sm-banner span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+/* Hover effect of the Banner Buttom */
+#sm-banner .banner-box:hover button {
+  background-color: #088178;
+  border: 1px solid #088178;
 }
