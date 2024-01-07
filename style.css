@@ -96,12 +96,16 @@ body {
 #navbar li a.active::after,
 #navbar li a:hover::after {
   content: "";
-  width: 40%;
+  width: 30%;
   height: 2px;
   background: var(--HOVER-COLOR);
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+#mobile {
+  display: none;
+  align-items: center;
 }
 #hero {
   background-image: url("img/hero4.png");
@@ -481,11 +485,17 @@ footer a:hover {
   background-color: #eaeaea;
   font-weight: 300;
 }
-
+#close {
+  display: none;
+}
 /* Media Query */
 @media screen and (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
   }
   #navbar {
     display: flex;
@@ -502,21 +512,6 @@ footer a:hover {
     padding: 80px 0 0 10px;
     transition: 0.3s;
   }
-  #navbar.active {
-    right: 0px;
-  }
-  #navbar li {
-    margin-bottom: 25px;
-  }
-  #mobile {
-    display: flex;
-    align-items: center;
-  }
-  #mobile i {
-    color: #1a1a1a;
-    font-size: 24px;
-    padding-left: 20px;
-  }
   #close {
     display: initial;
     position: absolute;
@@ -524,6 +519,17 @@ footer a:hover {
     left: 30px;
     color: #222;
     font-size: 24px;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
   }
   #lg-bag {
     display: none;
@@ -550,6 +556,7 @@ footer a:hover {
   }
   #sm-banner .banner-box {
     min-width: 100%;
+    margin-bottom: 10%;
     height: 30vh;
   }
   #banner3 {
@@ -563,6 +570,6 @@ footer a:hover {
   }
   footer .copyright {
     text-align: start;
-  } 
-  
+  }
+
 }

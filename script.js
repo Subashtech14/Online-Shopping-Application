@@ -12,3 +12,18 @@ function validateEmailAddress(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+
+const bar = document.getElementById("bar");
+const navigation = document.getElementById("navbar");
+const close = document.getElementById("close");
+if (bar) {
+  bar.addEventListener("click", () => {
+    navigation.classList.add("active");
+  });
+}
+
+if (close) {
+  close.addEventListener("click", () => {
+    navigation.classList.remove("active");
+  });
+}
